@@ -100,23 +100,29 @@ body, html {
     color: var(--color-black);
     margin-bottom: 40px;
     text-align: center;
-    font-size: 40px;
+    font-size: 70px;
 }
 
 .hero-content p {
+    width: 900px;
+    line-height: 1.5;
+    word-wrap: break-word;
     color: var(--color-black);
     margin-bottom: 40px;
     text-align: center;
-    font-size: 15px ;
-}
+    font-size: 20px ;
+    }
 
 .btn-hero {
+    width: 220px;
+    text-align: center;
     color: var(--color-black);
     background: #009986;
     font-weight: bold;
     padding: 15px 40px;
     border-radius: 8px;
     text-decoration: none;
+    transition: 0.5s;
 }
 
 .btn-hero:hover {
