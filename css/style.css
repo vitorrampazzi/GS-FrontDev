@@ -1,8 +1,50 @@
 :root {
+  --color-base:#ffffff;
   --color-black: #161515;
   --color-black-100: #949292;
   --color-light: #FFFFFF;
+  --color-blue: rgb(54, 160, 250);
   --bg-card: #111316;
+  --text-color:#000000;
+}
+
+.darkmode{
+  --color-black: #161515;
+  --color-black-100: #949292;
+  --color-light: #03002b;
+  --color-blue: rgb(54, 160, 250);
+  --bg-card: #111316;
+  --text-color:#FFFFFF;
+  --color-base:#000000;
+}
+
+#theme-switch{
+    height: 35px;
+    width: 35px;
+    padding: 0;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--color-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#theme-switch svg{
+    fill: var(--text-color);
+}
+
+#theme-switch svg:last-child{
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child{
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child{
+    display: block;
 }
 
 *{
@@ -20,22 +62,7 @@ body, html {
 .container{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(
-      180deg,
-      hsl(240deg 23% 33%) 0%,
-      hsl(240deg 26% 33%) 8%,
-      hsl(240deg 28% 33%) 17%,
-      hsl(239deg 31% 32%) 25%,
-      hsl(239deg 34% 32%) 33%,
-      hsl(239deg 37% 31%) 42%,
-      hsl(238deg 41% 31%) 50%,
-      hsl(238deg 44% 31%) 58%,
-      hsl(237deg 48% 30%) 67%,
-      hsl(236deg 52% 29%) 75%,
-      hsl(235deg 57% 29%) 83%,
-      hsl(234deg 63% 28%) 92%,
-      hsl(233deg 70% 27%) 100%
-    );
+    background-color: var(--color-base);
     position: relative;
 }
 
@@ -48,6 +75,7 @@ body, html {
 }
 
 .titulo h2 {
+    color: var(--text-color);
     font-size: 27px;
     font-weight: bold;
     margin: 0;
@@ -69,15 +97,15 @@ body, html {
 }
 
 .header ul li a {
+    color: var(--text-color);
     text-decoration: none;
-    color: var(--color-black);
     transition: color 0.5s;
     padding: 8px 12px;
     border-radius: 5px;
 }
 
 .header ul li a:hover {
-    color: yellow;
+    color: rgb(54, 160, 250);
     background: rgba(255,255,255,0.08);
 }
 
@@ -97,7 +125,7 @@ body, html {
 }
 
 .hero-content h1 {
-    color: var(--color-black);
+    color: var(--text-color);
     margin-bottom: 40px;
     text-align: center;
     font-size: 70px;
@@ -107,7 +135,7 @@ body, html {
     width: 900px;
     line-height: 1.5;
     word-wrap: break-word;
-    color: var(--color-black);
+    color: var(--text-color);
     margin-bottom: 40px;
     text-align: center;
     font-size: 20px ;
@@ -116,8 +144,8 @@ body, html {
 .btn-hero {
     width: 220px;
     text-align: center;
-    color: var(--color-black);
-    background: #009986;
+    color: var(--text-color);
+    background: rgb(54, 160, 250);
     font-weight: bold;
     padding: 15px 40px;
     border-radius: 8px;
@@ -126,14 +154,15 @@ body, html {
 }
 
 .btn-hero:hover {
-    background: #0b7b6e;
+    background: rgb(20, 115, 180);
 }
 
 .cor-pro{
-    color: var(--color-black-100);
+    color: var(--color-blue);
 }
 
 h1{
+    color: var(--text-color);
     display: flex;
     justify-content: center;
     font-size: 45px;
@@ -188,8 +217,10 @@ h1{
     gap: 180px;
 
     & p{
-        font-size: 20px;
-        width: 40%;
+        color: var(--text-color);
+        font-size: 26px;
+        width: 43%;
+        line-height: 1.3;
         margin: 30px;
         margin-top: 140px;
         margin-left: 50px;
@@ -209,21 +240,26 @@ h1{
     justify-content: center;
     margin-top: 60px;
     & h3{
+        color: var(--text-color);
         font-weight: bold;
         word-wrap: break-word;
     }
     & a{
         margin-top: 30px;
         padding: 30px 40px;
-        color: var(--color-black);
-        background: #009986;
+        color: var(--text-color);
+        background: rgb(54, 160, 250);
         font-weight: bold;
         padding: 15px 40px;
         border-radius: 8px;
         text-decoration: none;
+        transition: 0.5s;
     }
     & h4{
         margin-top: 50px;
+    }   
+    & a:hover{
+        background-color: rgb(20, 115, 180)
     }
 }
 
@@ -238,11 +274,14 @@ h1{
     gap: 180px;
 
     & p{
-        font-size: 20px;
-        width: 40%;
+        color: var(--text-color);
+        font-size: 30px;
+        width: 60%;
+        line-height: 1.3;
         margin: 30px;
-        margin-top: 140px;
-        margin-left: 50px;
+        margin-top: 80px;
+        margin-left: 4px;
+        margin-right: 10px;
     }
 
     & img{
