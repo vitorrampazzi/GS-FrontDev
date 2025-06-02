@@ -6,12 +6,13 @@
     <title>AqualertPro</title>
     <link rel="stylesheet" href="./css/resetando.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="darkmode.js" defer></script>
 </head>
 <body>
-    <div class="container" id="laudging-page">
+    <div class="container hero-container" id="laudging-page">
 
         <a href="#laudging-page" class="titulo"><h2>Aqualert<span class="cor-pro">Pro</span></h2></a>
-        
+         
         <div class="header">
             <ul>
                 <li><a href="#laudging-page">Home</a></li>
@@ -19,14 +20,20 @@
                 <li><a href="#objetivos">Objetivos</a></li>
                 <li><a href="#publico-alvo">Público Alvo</a></li>
                 <li><a href="#beneficios">Benefícios</a></li>
-                <li><a href="#como-ajudar">Como Ajudar</a></li>
+                <li><a href="#utilidade">Utilidades</a></li>
+
+                <li><button id="theme-switch">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+                </button></li>
             </ul>
         </div>
 
         <section class="hero">
             <div class="hero-content">
-                <h1>Bem-vindo ao AqualertPro!</h1>
-                <p>O jeito inteligente de monitorar a qualidade da sua água. Controle, receba alertas e acompanhe em tempo real.</p>
+                <h1>Bem-vindo ao Aqualert<span class="cor-pro">Pro!</span></h1>
+                <p>O jeito inteligente de monitorar e se proteger contra enchentes no Brasil! Controle, receba alertas e acompanhe em tempo real.</p>
                 <a href="#" class="btn-hero">Comece Agora</a>
             </div>
         </section>
@@ -38,19 +45,19 @@
             <div class="card">
                 <img src="./images/filetype-html.svg" alt="Logo do HTML">
                 <h2>HTML</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, nostrum.</p>
+                <p>O desenvolvimento deste website foi feito utilizando esta linguagem de marcação.</p>
             </div>
     
             <div class="card">
                 <img src="./images/css.svg" alt="Logo da CSS">
                 <h2>CSS</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, nostrum.</p>
+                <p>A estilização deste website foi feita utilizando esta linguagem de estilo.</p>
             </div>
     
             <div class="card">
                 <img src="./images/robot.svg" alt="Logo de um robô">
                 <h2>Arduíno</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, nostrum.</p>
+                <p>Nosso dispositivo foi feito com um microcontrolador Arduíno e programado na linguagem C++</p>
             </div>
         </div>
     </div>
@@ -58,8 +65,8 @@
     <div class="container" id="objetivos">
         <h1>Objetivos a Serem Alcançados</h1>
         <div class="objetivos">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores perferendis expedita sint soluta minima itaque iure ad ipsam est in ea, nemo asperiores omnis, veritatis minus? Repellendus distinctio itaque commodi, excepturi accusamus vitae aperiam, molestias voluptatem ipsam dolore unde. Blanditiis culpa quibusdam voluptates repudiandae, vero dicta ipsum? Itaque, repudiandae eveniet.</p>
-            <img src="./images/pexels-samandgos-709542.jpg" alt="Inundação em árvores sem folha">
+            <p>Somos criadores do AqualertPro, um sistema eficiente e acessível de monitoramento de enchentes. Nosso objetivo é contribuir para a segurança de populações em áreas de risco, emitindo alertas preventivos e reduzindo os impactos sociais, econômicos e ambientais. Também promovemos o uso de tecnologia sustentável e a conscientização sobre práticas preventivas frente às mudanças climáticas.</p>
+            <img src="images/pexels-pok-rie-33563-6471927.jpg" alt="Inundação em árvores sem folha">
         </div>
     </div>
 
@@ -67,23 +74,28 @@
         <h1>Público-Alvo</h1>
         <div class="cards">
             <div class="card">
-                <h2>Pessoas em Situação de Rua</h2>
+                <h2>Populações que vivem em áreas de risco</h2>
+                <p> bairros próximos a rios, encostas e zonas com histórico de alagamentos.</p>
             </div>
     
             <div class="card">
-                <h2>Pessoas de baixa renda</h2>
+                <h2>Pessoas em situação de vulnerabilidade social</h2>
+                <p>baixa renda, habitações informais, com dificuldade de acesso a informações oficiais.</p>
             </div>
     
             <div class="card">
-                <h2>Pessoas Deficientes</h2>
+                <h2>Pessoas com deficiência ou mobilidade reduzida</h2>
+                <p>que podem ter mais dificuldade para evacuar rapidamente em caso de enchente.</p>
             </div>
 
             <div class="card">
-                <h2>Pessoas em área de risco</h2>
+                <h2>Defesa Civil Municipal e Estadual e Agentes Comunitários de Saúde</h2>
+                <p>para monitoramento e emissão de alertas mais precisos e que atuam em contato direto com a população.</p>
             </div>
     
             <div class="card">
-                <h2>Pessoas Sem encanamento</h2>
+                <h2>Organizações que atuam em áreas de risco</h2>
+                <p>Apoio a ações preventivas e emergenciais.</p>
             </div>
         </div>
     </div>
@@ -92,37 +104,35 @@
         <h1>Benefícios</h1>
         <div class="beneficios">
             <img src="./images/pexels-pixabay-414837.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, distinctio. Rerum, quisquam sed. Sunt beatae harum, delectus fugit provident pariatur sed, blanditiis ducimus sequi soluta accusamus magni consequatur autem perferendis fugiat quos ea alias quasi doloremque consequuntur cupiditate et dolorem.</p>
+            <p>O AqualertPro oferece monitoramento contínuo e alertas preventivos, protegendo vidas e reduzindo danos em áreas suscetíveis a enchentes. Apoia moradores, autoridades e equipes de resgate, garantindo respostas rápidas e eficientes. Sua tecnologia facilita políticas eficazes de prevenção e adaptação climática, promovendo segurança, bem-estar e resiliência comunitária.
+            </p>
         </div>
     </div>
 
-    <div class="container" id="como-ajudar">
-        <h1>Como Ajudar</h1>
-        <div class="quiz">
-            <h3>Respondendo este Quiz, você vai estar ajudando muito, ajudando principalmente a preservação do meio ambiente!</h3>
-            <a href="">Clique Aqui</a>
-            <div>
-                <h4>Mas também tendo boas praticas ajudaria muito, dentre elas: </h4>
-            </div>
+    <div class="container" id="utilidade">
+        <h1>Utilidades</h1>
+        
         <div class="cards espaco">
             <div class="card-como-ajudar">
                 <img src="./images/pexels-vanessa-loring-7869034.jpg" alt="">
-                <h2>Pessoas em Situação de Rua</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, nostrum.</p>
+                <h2>Monitoramento em tempo real de rios e áreas de risco.</h2>
             </div>
-    
+            
             <div class="card-como-ajudar">
-                <img src="./images/pexels-vanessa-loring-7869034.jpg" alt="">
-                <h2>Pessoas que Moram em Lugar de Alagamento</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, nostrum.</p>
+                <img src="images/pexels-hiteshchoudhary-1739855 (1).jpg" alt="">
+                <h2>Emissão automática de alertas preventivos.</h2>
             </div>
-    
+            
             <div class="card-como-ajudar">
-                <img src="./images/pexels-samandgos-709542.jpg" alt="">
-                <h2>Pessoas Deficientes</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, nostrum.</p>
+                <img src="images/pexels-denniz-futalan-339724-1344265 (1).jpg" alt="">
+                <h2>Prevenção de perdas humanas e materiais.</h2>
             </div>
         </div>
+
+        <div class="quiz">
+            <h1>Nosso Quiz</h1>
+            <h3>Respondendo este Quiz, você vai estar ajudando muito, ajudando principalmente a preservação do meio ambiente!</h3>
+            <a href="">Clique Aqui</a> 
         </div>
     </div>
 </body>
