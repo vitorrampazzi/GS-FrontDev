@@ -34,7 +34,7 @@ button {
   width: 100%;
   border: none;
   border-radius: 12px;
-  background: linear-gradient(145deg, #ff006f, #ff4f96);
+  background: linear-gradient(145deg, #13107a, #2b7bc1);
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
   color: #ffffff;
   font-size: 16px;
@@ -119,4 +119,8 @@ input[type="text"]:focus {
 
 .cor-pro{
     color: rgb(0, 174, 255);
+}
+
+.btn-nxt{
+    background-color: rgb(18, 175, 210);
 }
