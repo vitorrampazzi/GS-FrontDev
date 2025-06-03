@@ -1,95 +1,96 @@
 const questions = [
   {
-    question: "Qual é a capital do Brasil?",
+    question: "O que deve ser feito ao receber um alerta de enchente?",
     answers: [
-      { text: "Rio de Janeiro", correct: false },
-      { text: "Brasília", correct: true },
-      { text: "São Paulo", correct: false },
-      { text: "Salvador", correct: false }
+      { text: "Ignorar o alerta", correct: false },
+      { text: "Buscar abrigo em local alto e seguro", correct: true },
+      { text: "Esperar dentro de casa mesmo em área de risco", correct: false },
+      { text: "Tentar atravessar áreas alagadas a pé", correct: false }
     ]
   },
   {
-    question: "Qual linguagem é usada para estilizar páginas web?",
+    question: "Qual item é essencial em um kit de emergência para enchentes?",
     answers: [
-      { text: "HTML", correct: false },
-      { text: "Python", correct: false },
-      { text: "CSS", correct: true },
-      { text: "PHP", correct: false }
+      { text: "Televisão", correct: false },
+      { text: "Notebook", correct: false },
+      { text: "Lanterna e pilhas", correct: true },
+      { text: "Almofadas extras", correct: false }
     ]
   },
   {
-    question: "Quem é o criador do JavaScript?",
+    question: "Quem deve ser contatado em caso de emergência durante uma enchente?",
     answers: [
-      { text: "Brendan Eich", correct: true },
-      { text: "Tim Berners-Lee", correct: false },
-      { text: "Mark Zuckerberg", correct: false },
-      { text: "Elon Musk", correct: false }
+      { text: "Corpo de Bombeiros", correct: true },
+      { text: "Serviço de Internet", correct: false },
+      { text: "Agência de turismo", correct: false },
+      { text: "Correios", correct: false }
     ]
   },
   {
-    question: "Qual é o maior planeta do nosso sistema solar?",
+    question: "O que NÃO se deve fazer durante uma enchente?",
     answers: [
-      { text: "Terra", correct: false },
-      { text: "Júpiter", correct: true },
-      { text: "Saturno", correct: false },
-      { text: "Marte", correct: false }
+      { text: "Evitar contato com a água da enchente", correct: false },
+      { text: "Desligar a energia elétrica", correct: false },
+      { text: "Atravessar áreas alagadas com correnteza", correct: true },
+      { text: "Buscar informações em fontes confiáveis", correct: false }
     ]
   },
   {
-    question: "Em que ano o primeiro homem pisou na Lua?",
+    question: "Em que situação o risco de enchente é maior?",
     answers: [
-      { text: "1959", correct: false },
-      { text: "1969", correct: true },
-      { text: "1971", correct: false },
-      { text: "1980", correct: false }
+      { text: "Durante o inverno seco", correct: false },
+      { text: "Após longos períodos de seca", correct: false },
+      { text: "Durante chuvas intensas e contínuas", correct: true },
+      { text: "Durante ventos fortes sem chuva", correct: false }
     ]
   },
   {
-    question: "Qual é a fórmula química da água?",
+    question: "Qual é um dos principais causadores de enchentes urbanas?",
     answers: [
-      { text: "H2O", correct: true },
-      { text: "CO2", correct: false },
-      { text: "O2", correct: false },
-      { text: "H2SO4", correct: false }
+      { text: "Construção de parques", correct: false },
+      { text: "Descarte inadequado de lixo", correct: true },
+      { text: "Pintura de muros", correct: false },
+      { text: "Uso de bicicletas", correct: false }
     ]
   },
   {
-    question: "Quem pintou a Mona Lisa?",
+    question: "O que fazer com alimentos que entraram em contato com água de enchente?",
     answers: [
-      { text: "Vincent van Gogh", correct: false },
-      { text: "Pablo Picasso", correct: false },
-      { text: "Leonardo da Vinci", correct: true },
-      { text: "Claude Monet", correct: false }
+      { text: "Consumir imediatamente", correct: false },
+      { text: "Lavar bem e comer", correct: false },
+      { text: "Descartar corretamente", correct: true },
+      { text: "Secar ao sol e guardar", correct: false }
     ]
   },
   {
-    question: "Qual é o idioma mais falado no mundo?",
+    question: "Por que a água da enchente é perigosa para a saúde?",
     answers: [
-      { text: "Inglês", correct: false },
-      { text: "Espanhol", correct: false },
-      { text: "Chinês Mandarim", correct: true },
-      { text: "Hindi", correct: false }
+      { text: "Porque está quente", correct: false },
+      { text: "Porque pode conter substâncias tóxicas e esgoto", correct: true },
+      { text: "Porque é salgada", correct: false },
+      { text: "Porque tem cor escura", correct: false }
     ]
   },
   {
-    question: "Qual é a moeda usada no Japão?",
+    question: "Qual órgão geralmente emite alertas de enchente no Brasil?",
     answers: [
-      { text: "Dólar", correct: false },
-      { text: "Euro", correct: false },
-      { text: "Iene", correct: true },
-      { text: "Won", correct: false }
+      { text: "INMET (Instituto Nacional de Meteorologia)", correct: true },
+      { text: "IBGE", correct: false },
+      { text: "Anvisa", correct: false },
+      { text: "BACEN", correct: false }
     ]
   },
   {
-    question: "Qual animal é conhecido como o Rei da Selva?",
+    question: "Qual animal pode transmitir doenças após enchentes?",
     answers: [
-      { text: "Elefante", correct: false },
-      { text: "Tigre", correct: false },
-      { text: "Leão", correct: true },
-      { text: "Gorila", correct: false }
+      { text: "Pombo", correct: false },
+      { text: "Gato", correct: false },
+      { text: "Rato", correct: true },
+      { text: "Papagaio", correct: false }
     ]
   }
 ];
+
 
 let currentQuestionIndex = 0;
 let score = 0;
