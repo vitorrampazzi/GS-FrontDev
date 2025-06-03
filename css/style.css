@@ -1,4 +1,4 @@
-/* definindo as cores padrões do site */
+/* definindo as cores padrões do site (ligth*/
 :root {
   --color-base:#ffffff;
   --color-black: #161515;
@@ -21,6 +21,17 @@
   --color-base:#000000;
 }
 
+/* definindo as cores do modo azul (bluemode) */
+.bluemode{
+  --color-black: #161515;
+  --color-black-100: #949292;
+  --color-light: #03002b;
+  --color-blue: rgb(54, 160, 250);
+  --bg-card: #111316;
+  --text-color:#FFFFFF;
+  --color-base:#011542;
+}
+
 /* personalizando o botão de troca de modo de exibição (escuro/claro) */
 #theme-switch{
     height: 35px;
@@ -39,6 +50,7 @@
 #theme-switch svg{
     fill: var(--text-color);
 }
+
 
 /* setando qual ícone aparecerá de acordo com o modo de exibição (claro/escuro) */
 #theme-switch svg:last-child{
