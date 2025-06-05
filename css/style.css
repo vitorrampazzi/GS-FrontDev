@@ -158,7 +158,6 @@ body, html {
     color: rgb(54, 160, 250);
     background: rgba(255,255,255,0.08);
 }
-
 /* configuração base da página principal (hero) */
 .hero {
     width: 100%;
@@ -610,3 +609,9 @@ h1{
         width: 100%;
     }
 }
+
+.menu a{
+    display: flex;
+    margin-top: 5px;
+}
+
