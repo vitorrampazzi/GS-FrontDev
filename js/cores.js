@@ -5,7 +5,7 @@ const themeSwitch = document.getElementById('theme-switch');
 const themeIcons = themeSwitch.querySelectorAll('img');
 
 // Variável para controlar qual tema está ativo
-let currentTheme = 'light';
+let currentTheme = localStorage.getItem('user-theme') || 'light';
 
 // Função que atualiza o tema da página
 function updateTheme() {
@@ -31,6 +31,9 @@ function updateTheme() {
         // Mostra o ícone referente ao modo Light (para próxima troca)
         themeIcons[1].style.display = 'block';
     }
+
+    // Salva o tema atual no localStorage
+    localStorage.setItem('user-theme', currentTheme);
 }
 
 // Função para alternar entre os modos
@@ -46,7 +49,7 @@ function toggleTheme() {
     updateTheme();
 }
 
-// Quando a página carregar, deixa o ícone correto visível
+// Quando a página carregar, deixa o ícone correto visível e aplica o tema salvo
 updateTheme();
 
 // Adiciona o evento de clique ao botão para trocar o tema
