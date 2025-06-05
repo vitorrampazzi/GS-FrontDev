@@ -26,13 +26,14 @@
                 <li><a href="#publico-alvo">Público Alvo</a></li>
                 <li><a href="#beneficios">Benefícios</a></li>
                 <li><a href="#utilidade">Utilidades</a></li>
-
-                <li><button id="theme-switch">
-                    <img src="./images/moon.svg" alt="Botão modo escuro (Lua)">
-                    <img src="./images/light_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.svg" alt="Botão modo claro (Sol)">
-                    <img src="./images/water_drop_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Botão modo azul (pingo de água)">
-                </button></li>
             </ul>
+
+            <div id="theme-buttons">
+                <button class="btn-theme" data-theme="light"><img src="images/light_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.svg" alt="Sol"></button>
+                <button class="btn-theme" data-theme="darkmode"><img src="images/dark_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.svg" alt="Lua"></button>
+                <button class="btn-theme" data-theme="bluemode"><img src="images/water_drop_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Gota de Água"></button>
+            </div>
+
         </div>
 
         <section class="hero">
@@ -216,8 +217,8 @@
     </div>
   </footer>
 
-    <script src="./js/cores.js"></script>
     <script src="./js/slideShow.js"></script>
     <script src="./js/hamburguer.js"></script>
+    <script src="js/cores.js"></script>
 </body>
 </html>

@@ -32,6 +32,34 @@
   --color-base:#011542;
 }
 
+/* No modo claro (sem classe) -> SVG preto */
+body:not(.darkmode):not(.bluemode) .btn-theme img {
+    filter: brightness(0); /* transforma em preto */
+}
+
+/* No modo escuro e azul -> mantém branco */
+body.darkmode .btn-theme img,
+body.bluemode .btn-theme img {
+    filter: brightness(1); /* mantém branco */
+}
+
+/* Estilos base dos botões de tema */
+#theme-buttons {
+  display: flex;
+  gap: 10px;
+  margin: 20px;
+}
+
+.btn-theme {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: var(--color-base);
+  color: var(--text-color);
+}
+
 /* personalizando o botão de troca de modo de exibição (escuro/claro) */
 #theme-switch{
     height: 35px;
