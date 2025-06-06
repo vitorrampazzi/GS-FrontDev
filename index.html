@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AqualertPro</title>
+
+    <link rel="stylesheet" href="./css/resetando.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head> 
+<body>
+    <!-- Container principal da landing page -->
+    <div class="container hero-container" id="laudging-page">
+        <a href="#laudging-page" class="titulo"><h2>Aqualert<span class="cor-pro">Pro</span></h2></a>
+         
+        <div class="header">
+            <!-- Botão do menu responsivo (hambúrguer) -->
+            <button id="menu-toggle" aria-label="Abrir Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Lista de navegação do site -->
+            <ul class="menu">
+                <li><a href="#laudging-page">Home</a></li>
+                <li><a href="#tecnologias">Tecnologias</a></li>
+                <li><a href="#objetivos">Objetivos</a></li>
+                <li><a href="#publico-alvo">Público Alvo</a></li>
+                <li><a href="#beneficios">Benefícios</a></li>
+                <li><a href="#utilidade">Utilidades</a></li>
+
+                <!-- Botões para trocar o tema do site -->
+                <li class="theme-buttons-menu">
+                    <button class="btn-theme" data-theme="light">
+                        <img src="images/light_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.svg" alt="Sol">
+                    </button>
+                    <button class="btn-theme" data-theme="darkmode">
+                        <img src="images/dark_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.svg" alt="Lua">
+                    </button>
+                    <button class="btn-theme" data-theme="bluemode">
+                        <img src="images/water_drop_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Gota de Água">
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Seção principal com mensagem de boas-vindas -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Bem-vindo ao Aqualert<span class="cor-pro">Pro!</span></h1>
+                <p>O jeito inteligente de monitorar e se proteger contra enchentes no Brasil! Controle, receba alertas e acompanhe em tempo real.</p>
+                <a href="#" class="btn-hero">Comece Agora</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Seção que apresenta as tecnologias utilizadas -->
+    <div class="container" id="tecnologias">
+        <h1>Tecnologias Utilizadas</h1>
+        <div class="cards">
+            <!-- Card do HTML -->
+            <div class="card">
+                <img src="./images/filetype-html.svg" alt="Logo do HTML">
+                <h2>HTML</h2>
+                <p>O desenvolvimento deste website foi feito utilizando esta linguagem de marcação.</p>
+            </div>
+
+            <!-- Card do CSS -->
+            <div class="card">
+                <img src="./images/css.svg" alt="Logo da CSS">
+                <h2>CSS</h2>
+                <p>A estilização deste website foi feita utilizando esta linguagem de estilo.</p>
+            </div>
+
+            <!-- Card do Arduino -->
+            <div class="card">
+                <img src="./images/robot.svg" alt="Logo de um robô">
+                <h2>Arduíno</h2>
+                <p>Nosso dispositivo foi feito com um microcontrolador Arduíno e programado na linguagem C++</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção que apresenta os objetivos do projeto -->
+    <div class="container" id="objetivos">
+        <h1>Objetivos a Serem Alcançados</h1>
+        <div class="objetivos">
+            <!-- Parágrafo explicativo -->
+            <p>Criamos o AqualertPro, sistema acessível de monitoramento de enchentes. Buscamos proteger áreas de risco com alertas preventivos, reduzir impactos sociais e ambientais, e incentivar o uso de tecnologia sustentável e a conscientização sobre mudanças climáticas e prevenção.</p>
+
+            <!-- Slider de imagens -->
+            <div class="slider">
+                <!-- Container das imagens -->
+                <div class="slides">
+                    <!-- Radio buttons que controlam os slides manualmente -->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                    <!-- Imagem 1 -->
+                    <div class="slide first">
+                        <img src="./images/pexels-pixabay-414837.jpg" alt="imagem1">
+                    </div>
+                    <!-- Imagem 2 -->
+                    <div class="slide">
+                        <img src="./images/pexels-denniz-futalan-339724-1344265 (1).jpg" alt="imagem2">
+                    </div>
+                    <!-- Imagem 3 -->
+                    <div class="slide">
+                        <img src="./images/pexels-vanessa-loring-7869034.jpg" alt="imagem3">
+                    </div>
+                    <!-- Imagem 4 -->
+                    <div class="slide">
+                        <img src="./images/pexels-pok-rie-33563-6471927.jpg" alt="imagem4" class="imagem-slide">
+                    </div>
+
+                    <!-- Botões de navegação automática -->
+                    <div class="navegation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>   
+                        <div class="auto-btn4"></div>
+                    </div>
+                </div>
+
+                <!-- Botões para navegação manual -->
+                <div class="manual-navegation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção com os tipos de público-alvo -->
+    <div class="container" id="publico-alvo">
+        <h1>Público-Alvo</h1>
+        <div class="cards">
+            <div class="card">
+                <h2>Populações em risco</h2>
+                <p>Rios, encostas, alagamentos, zonas vulneráveis.</p>
+            </div>
+            <div class="card">
+                <h2>Pessoas vulneráveis</h2>
+                <p>Baixa renda, moradia precária, informação limitada.</p>
+            </div>
+            <div class="card">
+                <h2>Pessoas com deficiência</h2>
+                <p>Mobilidade reduzida, evacuação difícil, enchentes.</p>
+            </div>
+            <div class="card">
+                <h2>Defesa Civil e agentes</h2>
+                <p>Alertas precisos, contato direto.</p>
+            </div>
+            <div class="card">
+                <h2>Organizações locais</h2>
+                <p>Prevenção, apoio emergencial, atuação em risco.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção de benefícios do sistema -->
+    <div class="container" id="beneficios">
+        <h1>Benefícios</h1>
+        <div class="beneficios">
+            <!-- Imagem ilustrativa -->
+            <img src="./images/pexels-pixabay-414837.jpg" alt="">
+            <!-- Texto explicativo -->
+            <p>O AqualertPro oferece monitoramento contínuo e alertas preventivos contra enchentes, protegendo vidas e reduzindo danos. Auxilia moradores, autoridades e resgates com respostas rápidas, promovendo segurança, bem-estar e políticas eficazes de prevenção e adaptação climática para comunidades mais resilientes.</p>
+        </div>
+    </div>
+
+    <!-- Seção com as utilidades práticas do sistema -->
+    <div class="container" id="utilidade">
+        <h1>Utilidades</h1>
+
+        <!-- Cards com exemplos de uso -->
+        <div class="cards espaco">
+            <div class="card-como-ajudar">
+                <img src="./images/pexels-vanessa-loring-7869034.jpg" alt="">
+                <h2>Monitoramento em tempo real de rios e áreas de risco.</h2>
+            </div>
+            <div class="card-como-ajudar">
+                <img src="images/pexels-hiteshchoudhary-1739855 (1).jpg" alt="">
+                <h2>Emissão automática de alertas preventivos.</h2>
+            </div>
+            <div class="card-como-ajudar">
+                <img src="images/pexels-denniz-futalan-339724-1344265 (1).jpg" alt="">
+                <h2>Prevenção de perdas humanas e materiais.</h2>
+            </div>
+        </div>
+
+        <!-- Seção com quiz interativo -->
+        <div class="container">
+            <h1>Nosso Quiz</h1>
+            <div class="quiz">
+                <h3>Respondendo este Quiz, você vai estar ajudando muito, ajudando principalmente a preservação do meio ambiente!</h3>
+                <a href="quiz.html">Clique Aqui</a> 
+            </div>
+        </div>
+
+        <!-- Rodapé do site -->
+        <footer>
+            <div class="footer-container">
+                <!-- Seção com links do site -->
+                <div class="footer-section">
+                    <h2>Seções do Site</h2>
+                    <p><a href="#laudging-page">Home</a></p>
+                    <p><a href="#tecnologias">Tecnologias</a></p>
+                    <p><a href="#objetivos">Objetivos</a></p>
+                    <p><a href="#publico-alvo">Público Alvo</a></p>
+                    <p><a href="#beneficios">Benefícios</a></p>
+                    <p><a href="#utilidade">Utilidades</a></p>
+                </div>
+
+                <!-- Seção de contato -->
+                <div class="footer-section">
+                    <h2>Contato</h2>
+                    <p>Email: contato@enchentesbrasil.org</p>
+                    <p>Endereço: AV lins de vasconcelos</p>
+                </div>
+
+                <!-- Seção de avaliação -->
+                <div class="footer-section">
+                    <h2>Avalie o Site</h2>
+                    <p>Ajude-nos a melhorar!</p>
+                    <p><a href="/avaliacao">Preencha nosso formulário</a></p>
+                    <div class="rating-stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                </div>
+            </div>
+
+            <!-- Direitos autorais -->
+            <div class="footer-bottom">
+                © 2025 Monitoramento de Enchentes. Todos os direitos reservados.
+            </div>
+        </footer>
+    <script src="./js/slideShow.js"></script>
+    <script src="./js/hamburguer.js"></script>
+    <script src="js/cores.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="description" content="Desafie seus conhecimentos com este quiz interativo! Responda perguntas, acumule pontos e divirta-se."> <!-- Descrição para SEO -->
+    <meta name="keywords" content="quiz, perguntas e respostas, jogo educativo, trivia, conhecimento, desafio">
+    <meta name="author" content="Amanda Ramos Castilho"> 
+
+    <link rel="icon" href="img/perguntas-frequentes.png" type="image/png"> 
+    <link rel="stylesheet" href="./css/quiz.css">
+
+    <title>Quiz Interativo</title> <!-- Título da aba do navegador -->
+</head>
+
+<body>
+
+    <a href="index.html" class="titulo"><h2>Aqualert<span class="cor-pro">Pro!</span></h2></a>
+
+    <div class="container">
+      <h1>Quiz Interativo 🧠</h1>
+
+      <!-- Tela inicial do quiz, aparece antes do início -->
+      <div id="start-screen">
+        <p>Pronto para testar seus conhecimentos?</p>
+        <button id="start-btn">Começar Quiz</button> <!-- Botão para iniciar o quiz -->
+      </div>
+
+      <!-- Container principal do quiz, inicialmente escondido -->
+      <div id="quiz-container" class="hide">
+
+        <!-- Barra de progresso que indica o avanço das perguntas -->
+        <div id="progress-container">
+          <div id="progress-bar"></div>
+        </div>
+
+        <div id="timer"></div> <!-- Elemento para exibir o temporizador -->
+
+        <h2 id="question"></h2> <!-- Área onde a pergunta será exibida -->
+
+        <div id="answers"></div> <!-- Área para as opções de resposta -->
+
+        <button id="next-btn" class="btn-nxt">Próxima</button> <!-- Botão para avançar para a próxima pergunta -->
+
+        <div id="score" class="hide"></div> <!-- Área para exibir a pontuação final, inicialmente escondida -->
+      </div>
+    </div>
+
+    <script src="./js/quiz.js"></script> <!-- Importa o arquivo JavaScript que controla a lógica do quiz -->
+</body>
+</html>
