@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <!-- Define o conjunto de caracteres da página como UTF-8 -->
     <meta charset="UTF-8">
+    <!-- Define que a página será exibida corretamente em dispositivos móveis e desktops -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título que aparecerá na aba do navegador -->
     <title>AqualertPro</title>
 
+    <!-- Importa o arquivo CSS que reseta estilos padrão dos navegadores -->
     <link rel="stylesheet" href="./css/resetando.css">
+    <!-- Importa o estilo principal do site -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Importa o estilo do rodapé -->
     <link rel="stylesheet" href="./css/footer.css">
 </head> 
 <body>
     <!-- Container principal da landing page -->
     <div class="container hero-container" id="laudging-page">
+        <!-- Título com link que leva ao topo da página -->
         <a href="#laudging-page" class="titulo"><h2>Aqualert<span class="cor-pro">Pro</span></h2></a>
          
+        <!-- Cabeçalho com o menu de navegação -->
         <div class="header">
             <!-- Botão do menu responsivo (hambúrguer) -->
             <button id="menu-toggle" aria-label="Abrir Menu">
@@ -34,12 +42,15 @@
                 <!-- Botões para trocar o tema do site -->
                 <li class="theme-buttons-menu">
                     <button class="btn-theme" data-theme="light">
+                        <!-- Ícone de sol (tema claro) -->
                         <img src="images/light_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.svg" alt="Sol">
                     </button>
                     <button class="btn-theme" data-theme="darkmode">
+                        <!-- Ícone de lua (tema escuro) -->
                         <img src="images/dark_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.svg" alt="Lua">
                     </button>
                     <button class="btn-theme" data-theme="bluemode">
+                        <!-- Ícone de gota d'água (tema azul) -->
                         <img src="images/water_drop_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Gota de Água">
                     </button>
                 </li>
@@ -49,8 +60,11 @@
         <!-- Seção principal com mensagem de boas-vindas -->
         <section class="hero">
             <div class="hero-content">
+                <!-- Título principal -->
                 <h1>Bem-vindo ao Aqualert<span class="cor-pro">Pro!</span></h1>
+                <!-- Parágrafo de introdução -->
                 <p>O jeito inteligente de monitorar e se proteger contra enchentes no Brasil! Controle, receba alertas e acompanhe em tempo real.</p>
+                <!-- Botão de chamada para ação -->
                 <a href="#" class="btn-hero">Comece Agora</a>
             </div>
         </section>
@@ -58,7 +72,9 @@
 
     <!-- Seção que apresenta as tecnologias utilizadas -->
     <div class="container" id="tecnologias">
+        <!-- Título da seção -->
         <h1>Tecnologias Utilizadas</h1>
+        <!-- Container dos cards -->
         <div class="cards">
             <!-- Card do HTML -->
             <div class="card">
@@ -141,22 +157,27 @@
     <div class="container" id="publico-alvo">
         <h1>Público-Alvo</h1>
         <div class="cards">
+            <!-- Card de população em risco -->
             <div class="card">
                 <h2>Populações em risco</h2>
                 <p>Rios, encostas, alagamentos, zonas vulneráveis.</p>
             </div>
+            <!-- Card de pessoas vulneráveis -->
             <div class="card">
                 <h2>Pessoas vulneráveis</h2>
                 <p>Baixa renda, moradia precária, informação limitada.</p>
             </div>
+            <!-- Card de pessoas com deficiência -->
             <div class="card">
                 <h2>Pessoas com deficiência</h2>
                 <p>Mobilidade reduzida, evacuação difícil, enchentes.</p>
             </div>
+            <!-- Card da defesa civil -->
             <div class="card">
                 <h2>Defesa Civil e agentes</h2>
                 <p>Alertas precisos, contato direto.</p>
             </div>
+            <!-- Card de organizações locais -->
             <div class="card">
                 <h2>Organizações locais</h2>
                 <p>Prevenção, apoio emergencial, atuação em risco.</p>
@@ -239,6 +260,8 @@
                 © 2025 Monitoramento de Enchentes. Todos os direitos reservados.
             </div>
         </footer>
+
+    <!-- Scripts JavaScript para funcionalidades do site -->
     <script src="./js/slideShow.js"></script>
     <script src="./js/hamburguer.js"></script>
     <script src="js/cores.js"></script>
