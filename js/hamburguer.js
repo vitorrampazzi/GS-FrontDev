@@ -1,6 +1,10 @@
-    const menuToggle = document.getElementById('menu-toggle');
-    const nav = document.querySelector('.header ul');
+// Seleciona o botão de menu (hambúrguer)
+const menuToggle = document.getElementById('menu-toggle');
 
-    menuToggle.addEventListener('click', () => {
-        nav.classList.toggle('show');
-    });
+// Seleciona a lista de navegação no cabeçalho
+const nav = document.querySelector('.header ul');
+
+// Alterna a visibilidade do menu ao clicar no botão
+menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('show');
+});

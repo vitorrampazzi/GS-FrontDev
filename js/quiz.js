@@ -92,11 +92,12 @@ const questions = [
 ];
 
 
-let currentQuestionIndex = 0;
-let score = 0;
-let timer;
-const timeLimit = 15;
+let currentQuestionIndex = 0; // Índice da pergunta atual
+let score = 0; // Pontuação do jogador
+let timer; // Referência ao temporizador
+const timeLimit = 15; // Tempo limite por pergunta (em segundos)
 
+// Referências aos elementos do DOM
 const startBtn = document.getElementById("start-btn");
 const startScreen = document.getElementById("start-screen");
 const quizContainer = document.getElementById("quiz-container");
@@ -107,28 +108,36 @@ const scoreElement = document.getElementById("score");
 const progressBar = document.getElementById("progress-bar");
 const timerElement = document.getElementById("timer");
 
+// Inicia o quiz ao clicar no botão "Começar"
 startBtn.addEventListener("click", () => {
   startScreen.classList.add("hide");
   quizContainer.classList.remove("hide");
   startQuiz();
 });
 
+// Inicializa o quiz, embaralha as perguntas e exibe a primeira
 function startQuiz() {
   currentQuestionIndex = 0;
   score = 0;
-  questions.sort(() => Math.random() - 0.5);
+  questions.sort(() => Math.random() - 0.5); // Embaralha as perguntas
   nextButton.textContent = "Próxima";
   scoreElement.classList.add("hide");
+
+  // Ativa o modo escuro automaticamente se o sistema do usuário estiver em dark mode
   document.body.classList.toggle("dark-mode", window.matchMedia('(prefers-color-scheme: dark)').matches);
+
   showQuestion();
 }
 
+// Exibe a pergunta atual e as alternativas
 function showQuestion() {
   resetState();
   startTimer();
   const currentQuestion = questions[currentQuestionIndex];
   questionElement.textContent = currentQuestion.question;
   updateProgressBar();
+
+  // Cria um botão para cada resposta
   currentQuestion.answers.forEach(answer => {
     const button = document.createElement("button");
     button.textContent = answer.text;
@@ -138,6 +147,7 @@ function showQuestion() {
   });
 }
 
+// Limpa os estados da pergunta anterior
 function resetState() {
   clearInterval(timer);
   nextButton.classList.add("hide");
@@ -147,6 +157,7 @@ function resetState() {
   }
 }
 
+// Verifica se a resposta está correta e exibe os estilos de acerto/erro
 function selectAnswer(e) {
   clearInterval(timer);
   const selectedBtn = e.target;
@@ -157,32 +168,39 @@ function selectAnswer(e) {
   } else {
     selectedBtn.classList.add("wrong");
   }
+
+  // Mostra quais eram as alternativas corretas
   Array.from(answersElement.children).forEach(button => {
     if (button.dataset.correct === "true") button.classList.add("correct");
     button.disabled = true;
   });
+
   nextButton.classList.remove("hide");
 }
 
+// Atualiza a barra de progresso com base na pergunta atual
 function updateProgressBar() {
   const progress = ((currentQuestionIndex + 1) / questions.length) * 100;
   progressBar.style.width = `${progress}%`;
 }
 
+// Inicia o cronômetro da pergunta
 function startTimer() {
   let timeLeft = timeLimit;
   timerElement.textContent = `⏳ ${timeLeft}s`;
+
   timer = setInterval(() => {
     timeLeft--;
     timerElement.textContent = `⏳ ${timeLeft}s`;
     if (timeLeft <= 0) {
       clearInterval(timer);
       timerElement.textContent = "⏰ Tempo esgotado!";
-      autoFailQuestion();
+      autoFailQuestion(); // Considera a pergunta como errada ao estourar o tempo
     }
   }, 1000);
 }
 
+// Mostra respostas certas e erradas se o tempo acabar
 function autoFailQuestion() {
   Array.from(answersElement.children).forEach(button => {
     if (button.dataset.correct === "true") button.classList.add("correct");
@@ -192,6 +210,7 @@ function autoFailQuestion() {
   nextButton.classList.remove("hide");
 }
 
+// Exibe a pontuação final e campo para salvar o nome no ranking
 function showScore() {
   resetState();
   questionElement.textContent = "Fim do Quiz!";
@@ -206,6 +225,7 @@ function showScore() {
   nextButton.classList.remove("hide");
 }
 
+// Salva o nome e pontuação no ranking (localStorage)
 function saveRanking() {
   const name = document.getElementById("player-name").value.trim();
   if (!name) return alert("Digite um nome para salvar!");
@@ -214,9 +234,10 @@ function saveRanking() {
   ranking.sort((a, b) => b.score - a.score);
   localStorage.setItem("ranking", JSON.stringify(ranking.slice(0, 5)));
   showRanking();
-  generateWhatsAppLink(name, score);
+  generateWhatsAppLink(name, score); // Função não incluída aqui, mas chamada após salvar
 }
 
+// Mostra o ranking com os 5 melhores jogadores
 function showRanking() {
   const ranking = JSON.parse(localStorage.getItem("ranking")) || [];
   const container = document.getElementById("ranking");
@@ -225,12 +246,14 @@ function showRanking() {
     "</ol>";
 }
 
+// Avança para a próxima pergunta ou reinicia o quiz
 nextButton.addEventListener("click", () => {
   if (nextButton.textContent === "Jogar novamente") {
     startScreen.classList.remove("hide");
     quizContainer.classList.add("hide");
     return;
   }
+
   currentQuestionIndex++;
   if (currentQuestionIndex < questions.length) {
     showQuestion();
